@@ -32,7 +32,7 @@ public class cartas {
          ArrayList<String> caract = new ArrayList<String>();
          ArrayList<String> Nombrecartausuario = new ArrayList<String>();
         
-        //Bloque de cofigo que se encarga de la lectura del archivo de texto que contiene las cartas
+
         ArrayList<String> allCards = new ArrayList<String>();
         try{
             Stream<String> lines = Files.lines(Paths.get("cards_desc.txt"),StandardCharsets.UTF_8);
@@ -61,17 +61,16 @@ public class cartas {
         
         
         for (String i: allCards) {
-	                //System.out.println(i);
 	                String[] information = i.split("[|]");
 	                Nombrecarta.add(information[0]);
 	                Totalcartas.put(information[0], information[1]);
-                        //System.out.println(totalCards);
+                        
 	    }
         
         
         
         while(opcion != 7){
-            System.out.println("Seleccione la operación que desea realizar: "
+            System.out.println("Seleccione la opcion que desea realizar: "
             + "\n1. Agregar una carta a tu coleccion"
             + "\n2. Mostrar el tipo de una carta"
             + "\n3. Mostrar informacion de las cartas de tu mazo"
@@ -127,8 +126,8 @@ public class cartas {
                             cantSpells +=1;
                         }
                     }
-                    //Resultado
-                    System.out.println("En tu mazo se encuentran: "
+                   
+                    System.out.println("Este es tu mazo "
                         + "\nMonstruos: " + cantMonster
                         + "\nHechizos: " + cantTrap
                         + "\nTrampas: " + cantSpells);
@@ -202,3 +201,4 @@ public class cartas {
     }
     
 }
+
