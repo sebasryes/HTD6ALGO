@@ -4,6 +4,7 @@ import java.util.Map;
 import java.util.TreeMap;
 /**
  * @author Carlos Sebastián Reyes Villatoro 21139
+ * @author Carlos Estrada 20853
  */
 public class MapFactory {
     /**

@@ -11,6 +11,7 @@ import java.util.stream.Stream;
 /**
  *
  * @author Sebastián Reyes 21139
+ * @author Carlos Estrada 20853
  */
 public class cartas {
 
